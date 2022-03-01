@@ -4,7 +4,7 @@
 ##############################################################################
 {
     'name': 'Default Product Qauntity With Stepping',
-    'version': '14.0.1',
+    'version': '15.0.1',
     'category': 'Website',
     'summary': 'Default Product Qauntity With Stepping',
     'description': """
@@ -14,10 +14,14 @@
     'author': 'Odoo Helper',
     'depends': ['website_sale'],
     'data': [
-        'views/assets.xml',
         'views/product_view.xml',
         'views/template.xml'
     ],
+    'assets': {
+        'web.assets_frontend': [
+            'oh_default_product_qauntity/static/src/custom.js',
+        ],
+    },
     'live_test_url': 'https://youtu.be/bl93ORfiOwQ',
     'images': ['images/OdooHelper.jpeg'],
     'price': 22.43,
