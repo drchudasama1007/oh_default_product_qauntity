@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="product_price_custom_hide_price" inherit_id="website_sale.product_price">
+        <xpath expr="//div[hasclass('product_price')]" position="after">
+           <input type="hidden" id="website_qauntity" name="website_qauntity" t-att-value="product.website_qauntity if product.website_qauntity else 1"/>
+        </xpath>
+    </template>
+
+    <template id="cart_lines_inherit" inherit_id="website_sale.cart_lines">
+        <xpath expr="//table[@id='cart_products']/tbody//td[hasclass('td-product_name')]" position="inside">
+            <input type="hidden" id="website_qauntity" class="website_qauntity" name="website_qauntity" t-att-value="line.product_id.product_tmpl_id.website_qauntity if line.product_id.product_tmpl_id.website_qauntity else 1"/>
+        </xpath>
+    </template>
+
+</odoo>

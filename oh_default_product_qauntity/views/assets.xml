@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<template id="assets_frontend" name="website assets"
+			inherit_id="web.assets_frontend">
+			<xpath expr="//link" position="after">
+				<script src="/oh_default_product_qauntity/static/src/custom.js" type="text/javascript"></script>
+			</xpath>
+		</template>
+	</data>
+</odoo>
