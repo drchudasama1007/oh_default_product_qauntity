@@ -19,7 +19,7 @@
         'views/template.xml'
     ],
     'live_test_url': 'https://youtu.be/bl93ORfiOwQ',
-    'images': ['images/OdooHelper.jpg'],
+    'images': ['images/OdooHelper.jpeg'],
     'price': 22.43,
     'currency': 'USD',
     'installable': True,
