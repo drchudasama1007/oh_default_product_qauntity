@@ -4,7 +4,7 @@
 ##############################################################################
 {
     'name': 'Default Product Qauntity With Stepping',
-    'version': '13.0.1',
+    'version': '12.0.1',
     'category': 'Website',
     'summary': 'Default Product Qauntity With Stepping',
     'description': """
